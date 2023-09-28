@@ -1,0 +1,27 @@
+ALGORITHM Sentence
+VAR
+    Vowels: INTEGER= 0
+    Words: INTEGER= 0
+    L : INTEGER= 0
+    sentence:= STRING
+    i= INTEGER = 0
+BEGIN
+    Read(Vowels)
+    IF (i = Vowels) THEN
+        Vowels:= Vowels +1
+    END_IF
+    Read(Words)
+    IF (i = " ") DO
+        Words:=  Words +1
+    END_IF
+    Read(L)
+    FOR i FROM 0 TO "." STEP 1  DO
+        L:= i + 1
+    END_FOR
+
+
+
+
+
+
+END
