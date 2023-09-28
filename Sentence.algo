@@ -6,18 +6,23 @@ VAR
     sentence:= STRING
     i= INTEGER = 0
 BEGIN
-    Read(Vowels)
-    IF (i = Vowels) THEN
-        Vowels:= Vowels +1
-    END_IF
-    Read(Words)
+    Read(sentence)
+    FOR i FROM 0 TO "." STEP step  DO
+        IF (i=Vowels) THEN
+        Vowels= Vowels + 1
+        END_IF
+    END_FOR
+    
+    FOR i FROM 0 TO "." STEP step  DO
     IF (i = " ") DO
         Words:=  Words +1
     END_IF
+    END_FOR
     Read(L)
     FOR i FROM 0 TO "." STEP 1  DO
         L:= i + 1
     END_FOR
+END
 
 
 
